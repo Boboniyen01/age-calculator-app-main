@@ -1,0 +1,118 @@
+*{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+body{
+    padding: 0px;
+    margin: 0;
+    background-color:  hsl(0, 0%, 86%); 
+}
+main{
+    margin: 100px auto;
+    width: 600px;
+    background-color: white;
+    padding: 2rem; /* 1rem means 16px ,  hence 2rem is 32px*/
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:100px ;
+    transition: transform 2s  1s ease ;
+}
+/* main:hover{
+    transform: scale(1.15);
+ 
+} */
+ .first-div p{
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom:-20px;
+    text-align: center;
+    color: rgb(236, 71, 71);
+    display: none;
+ }
+form{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+input{
+    width: 100px;
+    height: 50px;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid hsl(0, 0%, 86%);
+ 
+}
+input:active{
+    border: 2px solid hsl(259, 100%, 65%) ;
+    cursor: pointer;
+  
+    
+}
+input:focus{
+    background-color: hsl(0, 0%, 87%);
+}
+
+input::placeholder{
+    font-size: 1.5rem;
+}
+label{
+    display: block;
+    margin: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.submit-btn{
+    display: grid;
+ grid-template-columns: 1fr 1fr;
+ place-items: center;
+}
+
+.submit-btn hr{
+width:35rem
+}
+.submit-btn button{
+    position: relative;
+    right:30px ;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    outline: none;
+    border: none;
+    background-color: hsl(259, 100%, 65%) ;
+}
+.submit-btn button:active{
+    background-color:hsl(0, 0%, 8%) ;
+cursor: pointer;
+}
+.submit-btn button>img{
+    width:50px;
+    height: 50px;
+}
+
+#user-outputed-data p{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    color: hsl(0, 0%, 8%);
+}
+#user-outputed-data span{
+    font-size: 5rem;
+    font-weight: bold;
+    color:hsl(259, 100%, 65%) ;
+}
+.error input{
+    color: rgb(236, 71, 71);
+}
+input.warning{
+    border:2px solid hsl(0, 100%, 67%);
+}
+.added p{
+    color:  hsl(0, 100%, 67%);
+    margin: 0;
+}
