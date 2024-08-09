@@ -130,11 +130,11 @@ input.warning{
 
     }
     main{
-        width: 320px;
+        width:25rem;
 
     }
     form{
-        width: 70%;
+        width: 100%;
     }
     .submit-btn{
         margin: 4rem auto 0rem auto;
@@ -155,5 +155,8 @@ input.warning{
         font-size: 4rem;
         font-weight: bolder;
       
+    }
+    .attribution{
+        text-align: center;
     }
 }
