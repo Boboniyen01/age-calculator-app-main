@@ -2,6 +2,7 @@
     font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
+  box-sizing: border-box;
 }
 body{
     padding: 0 ;
@@ -10,7 +11,8 @@ body{
 }
 main{
     margin: 6.25rem auto;
-    width: 37.5rem;
+    width: 100%;
+    max-width: 37.5rem;
     background-color: white;
     padding: 2rem; /* 1rem means 16px ,  hence 2rem is 32px*/
     border-top-left-radius:10px ;
@@ -37,20 +39,21 @@ main{
  }
 
 form{
-    width: 31.25rem;
+    width: 100%;
+    max-width: 31.25rem;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 1rem;
     margin-bottom: 1rem;
     align-items: center;
 }
 input{
-    width:6.25rem ;
+    width:7.25rem ;
     height: 3.125rem;
     font-size: 1.5rem;
     outline: none;
     border-radius: 8px;
     border: 2px solid hsl(0, 0%, 86%);
- margin: 0rem 1rem 0 0rem;
 }
 input:active{
     border: 2px solid hsl(259, 100%, 65%) ;
@@ -80,7 +83,7 @@ label{
 }
 
 .submit-btn hr{
-width:35rem
+width:30rem
 }
 .submit-btn button{
     position: relative;
@@ -104,8 +107,8 @@ cursor: pointer;
 #user-outputed-data p{
     font-size: 5rem;
     font-weight: 850;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    margin-top: -0.5rem;
     color: hsl(0, 0%, 8%);
 }
 #user-outputed-data span{
@@ -122,30 +125,40 @@ input.warning{
     margin: 0;
 }
 
-@media(max-width:780px){
+@media(max-width:48rem){
     body{
         box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-     
+        padding: 1rem 1rem;
+        margin: 2rem auto;
+       width: 100%;
+        overflow: hidden;
     }
     main{
-     width:25rem;
+        width: 100%;
+        max-width: 22rem;
      display: grid;
      place-content: center;
-     margin: 0rem auto;
-
+     place-items: center;
+     margin: 0 auto;
+     padding: 1.5rem 0.2rem;
+     
     }
     form{
         width: 100%;
+    }
+    input {
+        flex: 1;
+        width: 5.25rem;
     }
     .submit-btn{
         margin: 4rem auto 0rem auto;
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
     }
     .submit-btn hr{
-        width:25rem;
+        width: 100%;
+        max-width:25rem;
     }
     .submit-btn button{
        position: relative;
@@ -155,12 +168,15 @@ input.warning{
     
     }
     #user-outputed-data p{
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: bolder;
-      
+        position: relative;
+        left: 0;
+        
     }
-    .attribution{
-        text-align: center;
-    margin: 1rem;
+    .attribution{ 
+    margin: 1.5rem auto 0 auto;
+    place-content: center;
     }
+ 
 }
