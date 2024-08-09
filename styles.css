@@ -125,7 +125,7 @@ input.warning{
 @media(max-width:780px){
     body{
         box-sizing: border-box;
-        padding: 1rem 1rem -1rem 1rem;
+        padding: 1rem 0 0 0;
         margin: 1rem 0 -1rem 0;
 
     }
@@ -134,7 +134,7 @@ input.warning{
 
     }
     form{
-        width: 100%;
+        width: 70%;
     }
     .submit-btn{
         margin: 4rem auto 0rem auto;
