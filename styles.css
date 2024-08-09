@@ -29,7 +29,7 @@ main{
  .first-div {
     position: relative;
  } 
- 
+
  .first-div p{
     font-size: 14px;
     margin-top: 4px;
@@ -179,8 +179,8 @@ input.warning{
     
     }
     #user-outputed-data p{
-        font-size: 3rem;
-        font-weight: bolder;
+        font-size: 3.5rem;
+        font-weight: 900;
         position: relative;
         left: 0;
         
