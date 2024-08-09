@@ -138,13 +138,17 @@ input.warning{
     }
     .submit-btn{
         margin: 4rem auto 0rem auto;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     .submit-btn hr{
         width:25rem;
     }
     .submit-btn button{
        position: relative;
-       left:-14rem;
+       top: -2.5rem;
+       
+       left: -0.5rem;
     
     }
     #user-outputed-data p{
