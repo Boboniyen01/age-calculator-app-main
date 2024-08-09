@@ -26,6 +26,10 @@ main{
     transform: scale(1.15);
  
 } */
+ .first-div {
+    position: relative;
+ } 
+ 
  .first-div p{
     font-size: 14px;
     margin-top: 4px;
@@ -35,6 +39,9 @@ main{
     text-align: center;
     color: rgb(236, 71, 71);
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
    
  }
 
@@ -123,6 +130,10 @@ input.warning{
 .added p{
     color:  hsl(0, 100%, 67%);
     margin: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin: 8.75rem;
 }
 
 @media(max-width:48rem){
