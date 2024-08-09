@@ -125,6 +125,7 @@ input.warning{
 @media(max-width:780px){
     body{
         box-sizing: border-box;
+        padding: 1rem;
     }
     main{
         width: 25rem;
