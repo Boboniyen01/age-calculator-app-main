@@ -162,7 +162,7 @@ input.warning{
         width: 5.25rem;
     }
     .submit-btn{
-        margin: 4rem auto 0rem auto;
+        margin: 4.5rem auto 0rem auto;
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
