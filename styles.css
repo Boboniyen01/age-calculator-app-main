@@ -22,10 +22,6 @@ main{
     transition: transform 2s  1s ease ;
 }
 
-/* main:hover{
-    transform: scale(1.15);
- 
-} */
  .first-div {
     position: relative;
  } 
@@ -184,6 +180,9 @@ input.warning{
         position: relative;
         left: 0;
         
+    }
+    #user-outputed-data span{
+        font-size: 3.5rem;
     }
     .attribution{ 
     margin: 1.5rem auto 0 auto;
